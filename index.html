@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Definisce la codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta charset="UTF-8">
+    <!-- Imposto la pagina per essere responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Collego questo pagina al foglio di stile CSS style.css per l'aspetto della pagina -->
+    <link rel="stylesheet" href="style.css">
+    <!-- inserisco il link al font Open Sans preso da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Titolo della pagina -->
+    <title>BARILLA</title>
+    <!-- Funzioni JavaScript -->
+    <script>
+      //Funzione JavaScript per effettuare lo scroll
+        function navigateTo(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop(); // Ottiengo il nome della pagina corrente
+            const links = document.querySelectorAll("nav a"); // Seleziono tutti i link della navbar
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active"); // Aggiungo la classe 'active' al link corrispondente
+                }
+            });
+        });
+    </script>
+</head>
+
+<body><!-- apertura del tag body -->
+    
+    <header> 
+        <!-- Barra di navigazione con link a diverse sezioni della pagina -->
+        <div class="navbar">
+            <img src="img/Barilla_logo.svg" alt="Barilla Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a> <!-- Link alla pagina home -->
+                <a href="sostenibilita.html">Sostenibilità</a> <!-- Link alla pagina del report di sostenibilita -->
+                <a href="contatti.html">Contatti</a> <!-- Link alla pagina dei contatti -->
+            </nav>
+            </div>
+    </header>
+
+    <!-- Sezione principale della pagina -->
+    <main>
+
+
+        <section id="Home" class="report-container">
+            <img src="img/storia_barilla.jpg" alt="Storia di Barilla" class="img">
+                <h2>La Storia di Barilla</h2>
+
+                <p><strong>Fondata nel 1877 a Parma</strong> da Pietro Barilla, l'azienda è cresciuta fino a diventare
+                    uno dei marchi alimentari più noti e rispettati a livello globale. Da oltre 140 anni, Barilla è
+                    sinonimo di <strong>qualità, passione e innovazione</strong>, con l’obiettivo di portare il gusto
+                    italiano nelle case di tutto il mondo.</p>
+
+                <p>Inizialmente una piccola bottega di pasta, Barilla ha saputo evolversi, affrontando le sfide dei
+                    tempi con un forte impegno verso la <strong>sostenibilità</strong>, l’<strong>innovazione
+                        tecnologica</strong> e il <strong>miglioramento continuo</strong>. La qualità dei suoi prodotti
+                    e l'attenzione alle persone sono sempre stati i pilastri del suo successo.</p>
+
+                <p>Oggi Barilla è presente in <strong>oltre 100 paesi</strong>, con un portafoglio che include
+                    <em>pasta, sughi, snack e prodotti da forno</em>. Continua a rispettare le tradizioni, guardando al
+                    futuro con un impegno costante per la sostenibilità ambientale e sociale.</p>
+
+                <h3>Un impegno per il futuro</h3>
+
+                <p>Nel corso degli anni, Barilla ha sviluppato <strong>numerosi progetti</strong> per la salute e il
+                    benessere delle persone, riducendo l’impatto ecologico e promuovendo la cultura gastronomica.</p>
+
+                <p>Il <strong>Gruppo Barilla</strong> è un perfetto equilibrio tra <strong>tradizione e
+                        innovazione</strong>, con un legame profondo con la sua terra d’origine e uno sguardo aperto al
+                    mondo. Continua a scrivere la sua storia con i valori di <strong>famiglia, qualità e
+                        sostenibilità</strong> al centro della sua missione.</p>
+
+        </section>
+    </main>
+
+    <!-- Footer della pagina -->
+    <footer>
+        <p> Barilla - The Italian food company. Since 1877.</p>
+        <div class="social-icons">
+            <!-- Aggiungo le icone dei principali social  -->
+            <img src="img/Facebook.svg" alt="Facebook">
+            <img src="img/instagram.svg" alt="Instagram">
+            <img src="img/Pinterest.svg" alt="Pinterest">
+        </div>
+        <p>2025 Barilla. Tutti i diritti riservati</p>
+    </footer> <!-- chiusura del footer -->
+</body> <!-- chiusura del tag body -->
+
+</html>

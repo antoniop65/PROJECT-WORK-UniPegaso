@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Definisce la codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta charset="UTF-8">
+    <!-- Imposto la pagina per essere responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Collego questo pagina al foglio di stile CSS style.css per l'aspetto della pagina -->
+    <link rel="stylesheet" href="style.css">
+    <!-- inserisco il link al font Open Sans preso da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Titolo della pagina -->
+    <title>BARILLA</title>
+    <!-- Funzioni JavaScript -->
+    <script>
+      //Funzione JavaScript per effettuare lo scroll
+        function navigateTo(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop(); // Ottiengo il nome della pagina corrente
+            const links = document.querySelectorAll("nav a"); // Seleziono tutti i link della navbar
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active"); // Aggiungo la classe 'active' al link corrispondente
+                }
+            });
+        });
+    </script>
+</head>
+<body> <!-- apertura del tag body -->
+    <!--Aggiungo l'immagine del logo recuperato dal percorso img/ -->
+    <header>
+        <!-- Barra di navigazione con link a diverse sezioni della pagina -->
+        <div class="navbar">
+            <img src="img/Barilla_logo.svg" alt="Barilla Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a> <!-- Link alla pagina home -->
+                <a href="sostenibilita.html">Sostenibilità</a> <!-- Link alla pagina del report di sostenibilita -->
+                <a href="contatti.html">Contatti</a> <!-- Link alla pagina dei contatti -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Aggiungo l'immagine del report recuperato dal percorso img/ -->
+    <img src="img/Sostenibilita.svg" alt="Sostenibilita" class="img">
+
+    <!-- Sezione sulla sostenibilità -->
+    <section id="Sostenibilita" class="report-container">
+
+    <h2>Rapporto di sostenibilità 2023 di Barilla</h2>
+
+    <h3>Personale e Comunità</h3>
+    <ul>
+        <li><strong>Formazione:</strong> Barilla ha investito significativamente nello sviluppo delle competenze dei
+            suoi dipendenti (oltre 160.000 ore di formazione).</li>
+        <li><strong>Iniziative sociali:</strong> L'azienda ha donato oltre 3 milioni di euro alle comunità e ha
+            coinvolto 44.500 bambini in attività educative legate alla nutrizione.</li>
+        <li><strong>Diversità e Inclusione:</strong> 38,5% degli executive e dei manager sono donne e il divario
+            salariale ingiustificato è stato eliminato.</li>
+    </ul>
+
+    <h3>Sostenibilità Ambientale</h3>
+    <ul>
+        <li><strong>Emissions Reduction:</strong> Barilla ha ridotto le sue emissioni di CO2 per tonnellata di
+            prodotto finito del 28% dal 2010.</li>
+        <li><strong>Agricoltura Sostenibile:</strong> Ha coinvolto oltre 8.500 aziende agricole in pratiche
+            sostenibili e ha promosso l'agricoltura rigenerativa.</li>
+        <li><strong>Packaging:</strong> Il 99,8% delle confezioni è progettato per essere riciclato.</li>
+        <li><strong>Uso delle Risorse:</strong> C'è stato un miglioramento significativo nella gestione delle
+            risorse idriche, riducendo il consumo d'acqua del 21%.</li>
+    </ul>
+
+    <h3>Filiere Sostenibili</h3>
+    <ul>
+        <li><strong>Materie prime:</strong> Barilla si impegna nella gestione responsabile delle materie prime,
+            promuovendo pratiche
+            agricole sostenibili.</li>
+
+        <li><strong>Benessere animale:</strong> L'azienda segue standard elevati nel trattamento degli animali.</li>
+
+        <li><strong>Tracciabilità e trasparenza:</strong> Implementate soluzioni per garantire la tracciabilità
+            dalla produzione alla distribuzione.</li>
+    </ul>
+
+    <h3>Governance e Trasparenza</h3>
+    <ul>
+        <li><strong>Etica e Integrità:</strong> Barilla promuove pratiche di business etico e di integrità, con una
+            governance orientata alla sostenibilità.</li>
+        <li><strong>Trasparenza:</strong> L'azienda ha migliorato la tracciabilità e la trasparenza lungo la filiera
+            produttiva.</li>
+    </ul>
+
+    <h3>Innovazioni nei Prodotti</h3>
+    <ul>
+        <li><strong>Riformulazioni:</strong> Sono stati effettuati 497 aggiornamenti nutrizionali per ridurre
+            zuccheri, sale e grassi nei prodotti.</li>
+        <li><strong>Nuovi Prodotti:</strong> Barilla ha lanciato nuovi prodotti, tra cui opzioni più salutari come
+            pasta e pane con fibre e legumi.</li>
+    </ul>
+
+    <h3>Impegno per il Cambiamento Climatico</h3>
+    <ul>
+        <li><strong>Strategie Ambientali:</strong> Barilla ha implementato soluzioni per ridurre l’impatto climatico
+            e migliorare l'efficienza energetica attraverso l'uso di energia rinnovabile (62% dell'elettricità
+            acquistata).</li>
+    </ul>
+
+    <h3>Partnership e Collaborazioni</h3>
+    <ul>
+        <li><strong>OnFoods:</strong> Barilla ha collaborato con altre aziende e istituzioni per promuovere un nuovo
+            modello alimentare sostenibile attraverso la Fondazione OnFoods.</li>
+        <li><strong>Consumer Goods Forum:</strong> Barilla è attivamente coinvolta in iniziative globali come il
+            Food Transition Pact e in collaborazione con altre aziende come Carrefour e Conad, con un focus su
+            salute e sostenibilità.</li>
+    </ul>
+
+    <h3>Sostenibilità a 360 Gradi</h3>
+    <p>L'approccio sostenibile di Barilla è integrato in tutti gli aspetti del suo business, dai prodotti
+        all'approvvigionamento, passando per l'innovazione, la gestione delle risorse e le politiche sociali. La
+        visione complessiva è orientata a garantire che ogni aspetto delle operazioni dell'azienda contribuisca
+        positivamente al pianeta e alle persone.</p>
+
+    <p>Il rapporto evidenzia come Barilla continui a fare passi significativi verso la sostenibilità, integrando
+        obiettivi ESG (ambientali, sociali e di governance) nella strategia complessiva dell'azienda.</p>
+    <h2>Report di Sostenibilita 2023</h2> <!-- Titolo della sezione del report -->
+
+    <!-- Sezione della descrizione del report di sostenibilità -->
+    <p>
+        Questo report racconta di noi, dei nostri prodotti, delle nostre persone e del
+        nostro modo di fare impresa.
+        Lavoriamo per un futuro in cui i nostri prodotti rappresentino occasioni di
+        gioia, di emozione, di condivisione – prodotti buoni e di qualità grazie alla
+        semplicità e agli ingredienti che scegliamo: un concetto che abbiamo racchiuso
+        nella nostra purpose: “La gioia del cibo per una vita migliore”.
+    </p>
+
+    <!-- Link ai report in formato PDF  -->
+    <a href="https://www.barillagroup.com/media/filer_public/f1/97/f197e069-7e63-44c4-b008-a136b4e59dd9/barillareport2023_executive_summary_eng_ita_esec_.pdf"
+        class="download-button" target="_blank"><img src="img/Document.svg" alt="PDF-highlights">
+        Scarica gli highlights </a> <!-- Bottone per scaricare il report -->
+
+    <a href="https://www.barillagroup.com/media/filer_public/38/66/3866c8cb-0545-49d7-9115-1a9e6b4b1024/2023_barilla_group_rapporto_sostenibilita_ita_interattivo_final.pdf"
+        class="download-button" target="_blank"><img src="img/Document.svg" alt="PDF-completo">
+        Scarica il report completo </a> <!-- Bottone per scaricare il report completo-->
+
+    </section>
+
+    <!-- Footer della pagina -->
+    <footer>
+        <p>Barilla - The Italian food company. Since 1877.</p>
+        <div class="social-icons">
+            <!-- Aggiungo le icone dei principali social  -->
+            <img src="img/Facebook.svg" alt="Facebook">
+            <img src="img/instagram.svg" alt="Instagram">
+            <img src="img/Pinterest.svg" alt="Pinterest">
+        </div>
+        <p>2025 Barilla. Tutti i diritti riservati</p>
+    </footer> <!-- chiusura del footer -->
+</body> <!-- chiusura del tag body -->
+</html>

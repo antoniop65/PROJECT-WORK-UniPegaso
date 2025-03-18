@@ -1,0 +1,170 @@
+/* Stili generali per il corpo della pagina */
+body {
+    font-family: 'Montserrat', sans-serif; /* Uso Montserrat come font principale */
+    margin: 0; /* Rimuovo il margine di default del body */
+    padding: 0; /* Rimuovo il padding di default del body */
+    background-color: #f4f4f4; /* Imposto un colore di sfondo in questo caso grigio chiaro */
+    color: #333; /* Imposto il colore del testo */
+}
+
+html {
+    font-family: 'Montserrat', sans-serif; /* Uso Montserrat come font principale */
+}
+
+/* Navbar */
+.navbar {
+    display: flex; /* Imposto un layout flessibile */
+    align-items: center; /* Allineo verticalmente gli elementi al centro */
+padding: 20px;/* Aggiungo un padding di 20px sia sopra che sotto */
+    gap: 20px; /* Imposto uno spazio tra gli elementi del navbar */
+}
+
+.navbar .logo {
+    width: 120px; /* Imposto la larghezza del logo */
+}
+
+.navbar nav a {
+    color: white; /* Imposto il colore bianco per i link */
+    text-decoration: none; /* Rimuovo la sottolineatura dai link */
+    margin-left: 20px; /* Aggiungo un margine a sinistra tra i link */
+    font-weight: bold; /* Imposto il font dei link in grassetto */
+}
+
+/* Effetto hover sui link della navbar */
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Aggiungo uno sfondo leggero quando si passa sopra il link */
+    border-radius: 25px; /* Arrotondo gli angoli del link */
+    transform: translateY(-2px); /* Aggiungo un effetto di spostamento verso l'alto */
+}
+
+/* Stili per il link attivo nella navbar */
+nav a.active {
+    color: white; /* Imposto il colore rosso per il link attivo */
+    font-weight: bold; /* Imposto il testo in grassetto */
+    border-bottom: 2px solid white; /* Aggiungo una sottolineatura colorata */
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #212E74; /* Imposto il colore blu di sfondo nel footer */
+    color: white; /* Imposto il testo in bianco nel footer */
+    text-align: center; /* Centro il testo all'interno del footer */
+    padding: 20px; /* Aggiungo un po' di spazio all'interno del footer */
+}
+
+/* Stili per l'header */
+header {
+    display: flex;/* Imposto un layout flessibile */
+    flex-direction: row; /* Imposto la direzione orizzontale per gli elementi */
+    align-items: center; /* Allineo verticalmente gli elementi al centro */
+    gap: 20px; /* Aggiungo uno spazio tra gli elementi */
+    width: 100%; /* La larghezza sarà il 100% del contenitore */
+    margin: 0 auto; /* Centra l'header orizzontalmente */
+    background: #212E74; /* Imposto il colore di sfondo dell'header */
+    border-top: 8px solid #CE082C; /* Imposto una bordatura superiore rossa */
+}
+
+/* Stili per il titolo principale della pagina (h1) */
+h1 {
+    margin: 0; /* Rimuovo il margine di default */
+    font-size: 2.5em; /* Imposto una grandezza del font */
+}
+
+h3 {
+    margin-right: 80px; /* Aggiungo un margine a destra per separare il titolo dagli altri elementi */
+}
+
+/* Stili per il font principale per il corpo della pagina (p) */
+p {
+    margin: 5px; /* Aggiungo un margine di 5px ai paragrafi */
+}
+
+/* Sezione principale dei report */
+main {
+    padding: 20px; /* Aggiungo uno spazio interno alla sezione principale */
+}
+
+/* Container per i report */
+.report-container {
+    color: #212E74; /* Imposto un colore blu scuro per il testo */
+    font-weight: 400; /* Imposto il peso del font normale */
+    line-height: 1.2; /* Aumento la spaziatura tra le righe */
+    margin-left: 80px; /* Imposto un margine a sinistra per il contenitore */
+    margin-right: 80px; /* Imposto un margine a destra per il contenitore */
+}
+
+/* Stili per gli item di report */
+.report-item {
+    margin-bottom: 20px; /* Aggiungo uno spazio tra gli item di report */
+}
+
+/* Stili per il titolo degli item di report (h3) */
+.report-item h3 {
+    color: #212E74; /* Imposto un colore blu scuro per i titoli degli item */
+}
+
+/* Stili per i paragrafi negli item dei report */
+.report-item p {
+    font-size: 1em; /* Imposto la dimensione del font */
+    line-height: 1.5; /* Aumento la spaziatura tra le righe */
+}
+
+/* Stili per il pulsante di download */
+.download-button {
+    display: inline-block; /* Imposto il pulsante come blocco inline */
+    background-color: #ce072d; /* Imposto un colore rosso di sfondo per il pulsante */
+    color: white; /* Imposto il testo del pulsante in bianco */
+    padding: 14px 28px; /* Imposto il padding del pulsante */
+    text-decoration: none; /* Rimuovo la sottolineatura dal pulsante */
+    margin: 20px 10px; /* Imposto i margini attorno al pulsante */
+    border-radius: 30px; /* Arrotondo gli angoli del pulsante */
+    font-weight: 600; /* Imposto il peso del font a 600 per il pulsante */
+    font-size: 16px; /* Imposto la dimensione del font */
+    text-align: center; /* Centro il testo nel pulsante */
+    transition: all 0.3s ease; /* Aggiungo una transizione morbida per gli effetti hover */
+
+}
+
+/* Effetto hover sul pulsante di download */
+.download-button:hover {
+    background-color: #b50626; /* Cambio il colore di sfondo quando si passa sopra il pulsante */
+    transform: translateY(-2px); /* Sposto il pulsante verso l'alto quando si passa sopra */
+    box-shadow: 0 4px 12px rgba(206, 7, 45, 0.3); /* Aumento l'ombra quando si passa sopra il pulsante */
+}
+
+/* Stili per le icone social */
+.social-icons img {
+    width: 30px; /* Imposto una larghezza fissa per le icone social */
+    margin: 10px; /* Aggiungo uno spazio attorno alle icone */
+}
+
+/* Stile per la lista di contatti */
+.contact-list {
+    padding: 0; /* Rimuovo il padding di default dalla lista */
+}
+
+/* Stile per ogni elemento della lista dei contatti */
+.contact-list li {
+    font-size: 1.1em; /* Imposto una dimensione del font per gli elementi della lista */
+    margin: 5px 0; /* Aggiungo un margine sopra e sotto ogni elemento della lista */
+}
+
+/* Stile per il testo "strong" nella lista dei contatti */
+.contact-list li strong {
+    color: #ce072d; /* Imposto il colore rosso per le etichette "strong" */
+}
+
+/* Stile per il testo "strong" nella sezione Sostenibilita */
+.report-container li strong {
+    color: #ce072d; /* Imposto il colore rosso per le etichette "strong" */
+}
+
+/* Stili per le immagini */
+.img {
+    display: block; /* Imposto l'immagine come blocco */
+    max-width: 100%; /* Imposto la larghezza massima dell'immagine */
+    height: auto; /* Imposto l'altezza automatica dell'immagine */
+    margin-left: auto; /* Centro l'immagine orizzontalmente */
+    margin-right: auto; /* Centro l'immagine orizzontalmente */
+}
+
